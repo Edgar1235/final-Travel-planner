@@ -10,14 +10,14 @@ class Trip:
 
     @staticmethod
     def validate_date(date_str):
-        """Перевірка та конвертація рядка у об'єкт дати (Кутинський)"""
+        """Перевірка та конвертація рядка у об'єкт дати (Едгар)"""
         try:
             return datetime.strptime(date_str, "%d.%m.%Y")
         except (ValueError, TypeError):
             return None
 
     def to_dict(self):
-        """Перетворення об'єкта в словник для збереження в JSON (Кутинський)"""
+        """Перетворення об'єкта в словник для збереження в JSON (Едгар)"""
         return {
             "name": self.name,
             "destination": self.destination,
@@ -27,7 +27,7 @@ class Trip:
         }
 
 def calculate_stats(trips):
-    """Розрахунок статистики: кількість та загальний бюджет (Кутинський)"""
+    """Розрахунок статистики: кількість та загальний бюджет (Едгар)"""
     total_trips = len(trips)
     total_budget = sum(trip.budget for trip in trips)
     return total_trips, total_budget
