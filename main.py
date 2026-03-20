@@ -39,5 +39,5 @@ def main():
             break
 
 
-if name == "main":
+if __name__ == "main":
     main()
