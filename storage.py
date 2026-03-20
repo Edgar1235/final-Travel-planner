@@ -1,5 +1,5 @@
 import json
-from models import travel
+from models import Trip
 
 FILENAME = "trips_data.json"
 

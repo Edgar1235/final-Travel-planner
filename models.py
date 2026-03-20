@@ -1,7 +1,7 @@
 from datetime import datetime
 
 class Trip:
-    def init(self, name, destination, start_date_str, end_date_str, budget):
+    def __init__(self, name, destination, start_date_str, end_date_str, budget):
         self.name = name
         self.destination = destination
         self.start_date = self.validate_date(start_date_str)
